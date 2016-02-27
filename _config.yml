@@ -68,4 +68,6 @@ theme: empty_room
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/anirudh-eka/empty_room.git
+  branch: gh-pages
