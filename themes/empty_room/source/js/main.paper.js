@@ -1,3 +1,4 @@
+// written in Paperscript
 function getRandom(min, max) {
 	return Math.random() * (max - min) + min;
 }
@@ -83,8 +84,9 @@ var reel = new Reel([new Pause(15),
 	new Line("with nothing to produce\n there is no resource to devour"),
 	new Line("no mining of moments"),
 	new Line("Let the birds"),
-	new Line("the rain and the echoes"),
-	new Line("come and go as they please")])
+	new Line("the rain and the echoes"),	
+	new Line("come and go as they please"),
+	new Line("Stretch open your mind to it all")])
 
 function onFrame(event) {
 	reel.animate()

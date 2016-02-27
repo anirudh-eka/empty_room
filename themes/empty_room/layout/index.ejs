@@ -4,13 +4,16 @@
 	<%- js("https://connect.soundcloud.com/sdk/sdk-3.0.0.js") %>
 	<%- js('js/bower_components/jquery/dist/jquery.min') %>
 	<%- js('js/bower_components/paper/dist/paper-full.min') %>
-	<%- paper('js/main', "myCanvas") %>
+	<%- paper('js/main.paper', "myCanvas") %>
+	<%- js('js/remove_distractions') %>
 	<%- js('js/player') %>
 	<title></title>
 </head>
 <body>
+	<div class="distraction">
 	<%- partial('_partial/navigation') %>
-	<canvas id="myCanvas" resize></canvas>
-	<div id="player"></div>
+	</div>
+	<canvas id="myCanvas" class="paper-canvas" resize></canvas>
+	<div id="player" class="distraction"></div>
 </body>
 </html>
