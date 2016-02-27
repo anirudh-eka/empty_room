@@ -1,0 +1,21 @@
+{
+  "name": "empty_room_theme",
+  "description": "",
+  "main": "",
+  "authors": [
+    "anirudh-eka"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper": "^0.9.25"
+  }
+}

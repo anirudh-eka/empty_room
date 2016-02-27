@@ -1,11 +1,25 @@
 <html>
 <head>
 	<%- css('css/main') %>
+	<%- js('js/main') %>
+	<%- js('js/bower_components/paper/dist/paper-full.min') %>
 	<title></title>
+	<script type="text/paperscript" canvas="myCanvas">
+		// Create a Paper.js Path to draw a line into it:
+		var path = new Path();
+		// Give the stroke a color
+		path.strokeColor = 'black';
+		var start = new Point(400, 400);
+		// Move to start and draw a line from there
+		path.moveTo(start);
+		// Note the plus operator on Point objects.
+		// PaperScript does that for us, and much more!
+		path.lineTo(start + [ 400, -50 ]);
+
+	</script>
 </head>
 <body>
 	<%- partial('_partial/navigation') %>
-	<h1><a href="">empty room</a></h1>
-	<p>content</p>
+	<canvas id="myCanvas" resize></canvas>
 </body>
 </html>
