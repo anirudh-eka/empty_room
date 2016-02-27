@@ -1,13 +1,16 @@
 <html>
 <head>
 	<%- css('css/main') %>
-	<%- js('js/main') %>
+	<%- js("https://connect.soundcloud.com/sdk/sdk-3.0.0.js") %>
+	<%- js('js/bower_components/jquery/dist/jquery.min') %>
 	<%- js('js/bower_components/paper/dist/paper-full.min') %>
 	<%- paper('js/main', "myCanvas") %>
+	<%- js('js/player') %>
 	<title></title>
 </head>
 <body>
 	<%- partial('_partial/navigation') %>
 	<canvas id="myCanvas" resize></canvas>
+	<div id="player"></div>
 </body>
 </html>

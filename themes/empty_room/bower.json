@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "paper": "^0.9.25"
+    "paper": "^0.9.25",
+    "jquery": "^2.2.1"
   }
 }
