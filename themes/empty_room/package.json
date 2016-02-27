@@ -1,0 +1,8 @@
+{
+  "name": "empty_room_theme",
+  "version": "1.0.0",
+  "author": "anirudh-eka",
+  "dependencies": {
+    "toomanynames_theme": "^1.0.0"
+  }
+}
